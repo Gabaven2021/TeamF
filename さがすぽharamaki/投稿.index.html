@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+    <html lang="ja">
+        <head>
+           <title>投稿</title>
+           <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+           <!-- Favicon-->
+           <link rel="icon" type="image/x-icon" href="img/アイコン.jpg" />
+           <!-- Font Awesome icons (free version)-->
+           <script src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" crossorigin="anonymous"></script>
+           <!-- Core theme CSS (includes Bootstrap)-->
+           <link href="css/styles.css" rel="stylesheet" />
+           <link href="css/投稿.css" rel="stylesheet" />
+        </head>
+      <body id="投稿"> 
+          <!-- Navigation-->
+          <a class="menu-toggle rounded" href="#"><i class="fas fa-bars"></i></a>
+          <nav id="sidebar-wrapper">
+              <ul class="sidebar-nav">
+                  <li class="sidebar-brand"><a href="page-top.index.html">さがすぽっと</a></li>
+                  <li class="sidebar-nav-item"><a href="#page-top.index.html">Home</a></li>
+                  <li class="sidebar-nav-item">アカウント名</li>
+                  <li class="sidebar-nav-item"><a href="アカウント情報.index.html">アカウント情報</a></li>
+                  <li class="sidebar-nav-item"><a href="投稿.index.html">投稿</a></li>
+                  <li class="sidebar-nav-item"><a href="ブックマーク.index.html">ブックマーク</a></li>
+                  <li class="sidebar-nav-item"><a href="#お知らせ">お知らせ</a></li>
+                  <li class="sidebar-nav-item"><a href="#お問い合わせ">お問い合わせ</a></li>
+                  <li class="sidebar-nav-item"><a href="#利用規約">利用規約</a></li>
+              </ul>
+          </nav>
+         　 <script src="js/scripts.js"></script>
+
+          <h1><b>投稿</b>
+          <!--sスポット名入力 -->
+           <form action="URL" method="post">
+               <p>
+                  <label for="スポット名">スポット名</label>
+             　   <input type="text" name="スポット名" id="スポット名"><br>
+               </p>
+
+               <p>
+                   タグを選択
+                   <select name="タグ分け">
+                       <option>自然</option>
+                       <option>景観</option>
+                       <option>アート</option>
+                    　 <option>夜景</option>
+                       <option>イルミネーション</option>
+                       <option>カフェ</option><option></option>
+                       <option>レストラン</option>
+                       <option>テイクアウト</option>
+                       <option>歴史</option>
+                       <option>お散歩</option>
+                   </select>
+               </p>
+               
+               <p>
+                   写真を追加
+                   <input type="file" name="写真を追加" size="30">
+               </p>
+               <p>
+                   説明<br>
+                   <textarea name="説明" rows="5" cols="40">
+                   </textarea>
+               </p>
+       　      <p>
+                   <input type="submit" value="送信">
+               </p>
+           </form>
+        　</h1>　 
+      </body>
+    </html>
