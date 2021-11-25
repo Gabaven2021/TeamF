@@ -13,7 +13,7 @@
         <script src="js/scripts.js"></script>
        　　　
         </head>
-      <body id="ブックマーク"> 
+      <body id=""> 
           <!-- Navigation-->
           <a class="menu-toggle rounded" href="#"><i class="fas fa-bars"></i></a>
           <nav id="sidebar-wrapper">
