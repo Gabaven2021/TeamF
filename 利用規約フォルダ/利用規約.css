@@ -1,0 +1,7 @@
+h1{font-size: xx-large;}
+h2{font-size: medium;} /*文字サイズ*/
+
+div{
+    margin-left: 50px;
+    margin-right: 50px;
+}/*両端にスペースをあける*/
