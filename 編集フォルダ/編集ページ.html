@@ -1,0 +1,101 @@
+<html>
+    <body>
+        <link rel="stylesheet" href="編集.css">
+
+        <div>
+            <span class="batsu"></span>
+            <h1>編集</h1>
+
+
+        <h2>スポットの名前：</h2>
+        <input type="text" id="name"
+        name="name" required minlength="4" maxlength="8" size="20"><!--スポットの入力フォーム-->
+
+         <!--ここにカテゴリを追加できるやつを入れる。服巻さんと同じものを-->
+
+        <hr>
+
+        <h2>※以下は未入力でも可</h2>
+
+        <h2>電話番号:</h2>
+        <input type="tel" id="phone" name="phone" pattern="[0-9]{3{-[0-0]{3}-{0-9]{4}"
+        required><!--電話番号入力フォーム-->
+
+        <br>
+
+        <h2>URL:</h2>
+        <input type="text" id="url"
+        name="url" required minlength="4" maxlength="8" size="20">
+
+        <br>
+
+        <!--ここから下は営業時間の入力フォーム-->
+
+        <h2>営業時間：</h2>
+
+        <p>
+            <input type="checkbox" id="月曜日"　name="月曜日">
+            <label for="月曜日">月曜日</label>
+            <input id="月曜日の開店時刻" type="time" name="月曜日の開店時刻">
+            <label for="から">～</label>
+            <input id="月曜日の閉店時刻" type="time" name="月曜日の閉店時刻">
+        </p>
+        
+        <p>
+            <input type="checkbox" id="火曜日"　name="火曜日">
+            <label for="火曜日">火曜日</label>
+            <input id="火曜日の開店時刻" type="time" name="火曜日の開店時刻">
+            <label for="から">～</label>
+            <input id="火曜日の閉店時刻" type="time" name="火曜日の閉店時刻">
+        </p>
+        
+        <p>
+            <input type="checkbox" id="水曜日"　name="水曜日">
+            <label for="水曜日">水曜日</label>
+            <input id="水曜日の開店時刻" type="time" name="水曜日の開店時刻">
+            <label for="から">～</label>
+            <input id="水曜日の閉店時刻" type="time" name="水曜日の閉店時刻">
+        </p>
+
+        <p>
+            <input type="checkbox" id="木曜日"　name="木曜日">
+            <label for="木曜日">木曜日</label>
+            <input id="木曜日の開店時刻" type="time" name="木曜日の開店時刻">
+            <label for="から">～</label>
+            <input id="木曜日の閉店時刻" type="time" name="木曜日の閉店時刻">
+        </p>
+
+        <p>
+            <input type="checkbox" id="金曜日"　name="金曜日">
+            <label for="金曜日">金曜日</label>
+            <input id="金曜日の開店時刻" type="time" name="金曜日の開店時刻">
+            <label for="から">～</label>
+            <input id="金曜日の閉店時刻" type="time" name="金曜日の閉店時刻">
+        </p>
+
+        <p>
+            <input type="checkbox" id="土曜日"　name="土曜日">
+            <label for="土曜日">土曜日</label>
+            <input id="土曜日の開店時刻" type="time" name="金土日の開店時刻">
+            <label for="から">～</label>
+            <input id="土曜日の閉店時刻" type="time" name="土曜日の閉店時刻">
+        </p>
+
+        <p>
+            <input type="checkbox" id="日曜日"　name="日曜日">
+            <label for="日曜日">日曜日</label>
+            <input id="日曜日の開店時刻" type="time" name="日曜日の開店時刻">
+            <label for="から">～</label>
+            <input id="日曜日の閉店時刻" type="time" name="日曜日の閉店時刻">
+        </p>
+
+        <span class="kannryoubotann">
+            <a href="#" class="btn-flat-simple">
+            <i aclass="fa fa-caret-right"></i> 完了
+          </a></span><!--完了ボタン-->
+
+        </div>
+
+        
+    </body>
+</html>
