@@ -1,0 +1,27 @@
+body{
+    text-align: center;
+}
+
+select::-ms-expand{
+    display: none;
+}
+
+select{
+    width: 50%;
+    max-width: 600px;
+    border: white;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    margin: 1em 0;
+    padding: .8em 1em;
+    font-size: 16px;
+    background-repeat: no-repeat;
+    background-size: 18px 10px;
+    background-position: right 20px center;
+    background-color: white;
+}
+
+option:first-child{
+    background-color: #00ff39;
+}
