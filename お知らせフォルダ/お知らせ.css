@@ -1,0 +1,31 @@
+h1{font-size: xx-large;}
+h2{font-size: medium;} /*文字サイズ*/
+
+div{
+    margin-left: 50px;
+    margin-right: 50px;
+}/*両端にスペースをあける*/
+
+.arrow_button {
+    display: inline-block;
+    position: relative;
+    padding: 10px 20px 10px 42px;
+    background: #53aa30; /* ボタンの背景色 */
+    border-radius: 10px;
+    color: #fff; /* テキストの色 */
+    float: right;
+  }
+  
+  .arrow_button::before { /* 矢印の表示設定 */
+    content: "";
+    position: absolute;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    left: 15px;
+    width: 10px;
+    height: 10px;
+    border-top: 3px solid #fff;
+    border-right: 3px solid #fff;
+    transform: rotate(45deg);
+  }
