@@ -1,0 +1,47 @@
+h1{color:rgb(97, 97, 97);}/*大きい文字の色指定*/
+.画像1
+{
+    width: 70%;/*横幅を割合で指定*/
+    height: auto;/*高さは自動設定*/
+}
+.下線{border-bottom: solid greenyellow;}/*サイトの概要の下に線引いた*/
+body{text-align: center;}/*bodyで囲った部分を中央ぞろえ*/
+
+
+a.btn-green{
+    padding: 0.5em;
+    margin: 10px 0;
+    display: block;
+    color: #fff !important;
+    background: #00ff39 ;
+    text-decoration: none;
+    font-weight: bold;
+    font-size:16px;
+    border-radius: 3px;
+    text-align:center;
+    text-decoration:none !important;
+  }
+  a.btn-green:before {
+    content: "";
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    margin: -3px 5px 1 0;
+    background: url("image/探すアイコン.png") no-repeat;
+    background-size: contain;
+    vertical-align: middle;
+  }
+  a.btn-green:hover {
+    background: #6FB83F;
+  }
+  @media screen and (min-width: 768px){
+    a.btn-green{
+      padding: 0.5em 2em;
+      margin: 10px auto;
+      font-size:20px;
+      display:inline-block;
+    }
+    a.btn-green:before {
+      margin: -3px 10px 0 0;
+    }
+  }
