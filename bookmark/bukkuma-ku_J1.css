@@ -1,0 +1,104 @@
+.キャンセルボタン{
+    text-align: right;
+}
+
+h2{
+    font-size: medium;
+    color: rgb(0, 192, 0);
+}
+
+.追加ボタン {
+  border: none;
+  outline: none;
+  background: transparent;
+}
+
+
+.全体{
+    margin-left: 50px;
+    margin-right: 50px;
+}/*両端にスペースをあける*/
+
+/*ここから下はリストのボタン*/
+a.btn_ao_b {
+    display: flex;
+    align-items: center;
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 1.3rem 2rem;
+    border: 2px solid #ffffff;
+    background: rgb(102, 102, 102);
+    text-decoration: none;
+    transition: 0.3s;
+  }
+  a.btn_ao_b:hover {
+    background-color: #4d4d4d;
+  }
+  a.btn_ao_b .b__text {
+    display: block;
+    flex-grow: 1;
+    color: #ffffff;
+    font-weight: bold;
+    text-align: center;
+    position: relative;
+    padding-right: 15px;
+    font-size: 23px;
+  }
+
+  /*ここから下は名前変更・削除*/
+
+
+  #menu ul{ 
+    margin: 0; 
+    padding: 0; 
+    list-style: none; 
+    }
+    #menu li{ 
+    display: inline; 
+    padding: 0; 
+    margin: 0;
+    }
+    #menu li a{
+    display:block; 
+    float: right;
+    border-top: 1px solid #9F99A3;
+    border-left: 1px solid #9F99A3;
+    border-right: 1px solid #ffffff;
+    background-color: #686868;
+    padding: 30px 10px;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    width: 50px; 
+    margin: 0px;
+    text-align: left;
+    font-size: 9px;
+    }
+    #menu li a:hover{
+    border-top: 1px solid #8593A9;
+    border-left: 1px solid #8593A9;
+    border-right: 1px solid #8593A9;
+    background-color: #9EB7DD;
+    }
+    #menu #shita li a{
+    display: block; 
+    border-left: 1px solid #9F99A3;
+    border-right: 1px solid #9F99A3;
+    border-bottom: 1px solid #9F99A3;
+    background-color: #EEEEEE;
+    padding:padding: 3px 10px;
+    text-decoration: none;
+    color: #333;
+    width: 100px; 
+    margin: 0px;
+    text-align: left;
+    font-size: 14px;
+    }
+    #menu #shita li a:hover{
+    border-left: 1px solid #8593A9;
+    border-right: 1px solid #8593A9;
+    border-bottom: 1px solid #8593A9;
+    background-color: #9EB7DD;
+    }
+    
+    
+  

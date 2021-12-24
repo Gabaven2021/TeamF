@@ -1,0 +1,35 @@
+.編集ボタン{
+    text-align: right;
+}
+
+
+.全体{
+    margin-left: 50px;
+    margin-right: 50px;
+}/*両端にスペースをあける*/
+
+/*ここから下はリストのボタン*/
+a.btn_ao_b {
+    display: flex;
+    align-items: center;
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 1.3rem 2rem;
+    border: 2px solid #ffffff;
+    background: rgb(102, 102, 102);
+    text-decoration: none;
+    transition: 0.3s;
+  }
+  a.btn_ao_b:hover {
+    background-color: #4d4d4d;
+  }
+  a.btn_ao_b .b__text {
+    display: block;
+    flex-grow: 1;
+    color: #ffffff;
+    font-weight: bold;
+    text-align: center;
+    position: relative;
+    padding-right: 15px;
+    font-size: 23px;
+  }
