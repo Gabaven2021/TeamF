@@ -1,43 +1,42 @@
-body{
-    text-align: center;
+body {
+  text-align: center;
 }
 
-header{
-    height:100%;
-    width: 60px;
-    position:fixed;
-    top:0;
-    z-index:10;
-    display:flex;
+header {
+  height: 100%;
+  width: 60px;
+  position: fixed;
+  top: 0;
+  z-index: 10;
+  display: flex;
 }
 
-ul{
-    display:flex;
-    list-style:none;
-    padding: 0;
-    margin: 0;
+ul {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
-a{
-    color:#000000;
-    display:block;
-    line-height: 60px;
+p {
+  text-align: center;
+  color: #949094;
+  font-size: x-large;
+  margin-top: 10%;
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-bottom: 10%;
+}
+h2 {
+  font-size: 50px;
 }
 
-#hamburger{
-    
-}
-
-.gaiyou{
-    color: #949094;
-}
-
-.btn-search{
-    text-align: center;
-    color: #fff;
-    background-color: #00ff39;
-    width: 50%;
-    max-width: 600px;
-    padding: 10px;
-    font-size: 30px;
+.btn-search {
+  text-align: center;
+  color: #fff;
+  background-color: #00ff39;
+  width: 50%;
+  max-width: 600px;
+  padding: 10px;
+  font-size: 30px;
 }
