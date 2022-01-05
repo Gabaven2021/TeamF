@@ -72,16 +72,34 @@ function initAutocomplete() {
     });
     map.fitBounds(bounds);
   });
+  function success(pos) {
+    var lat = pos.coords.latitude;
+    var lng = pos.coords.longitude;
+    var latlng = new google.maps.LatLng(lat, lng); //中心の緯度, 経度
+    var map = new google.maps.Map(document.getElementById("map"), {
+      zoom: 17,
+      center: latlng,
+    });
+    var marker = new google.maps.Marker({
+      position: latlng, //マーカーの位置（必須）
+      map: map, //マーカーを表示する地図
+    });
+  }
+  function fail(error) {
+    alert("位置情報の取得に失敗しました。エラーコード：" + error.code);
+    var latlng = new google.maps.LatLng(33.24145542450512, 130.29064258177937); //佐賀大学
+    var map = new google.maps.Map(document.getElementById("map"), {
+      zoom: 15,
+      center: latlng,
+    });
+  }
+  navigator.geolocation.getCurrentPosition(success, fail);
 }
 
 // This example requires the Places library. Include the libraries=places
 // parameter when you first load the API. For example:
 // <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&libraries=places">
 function initMap() {
-  const map = new google.maps.Map(document.getElementById("map"), {
-    center: { lat: -33.866, lng: 151.196 },
-    zoom: 15,
-  });
   const request = {
     placeId: "ChIJN1t_tDeuEmsRUsoyG83frY4",
     fields: ["name", "formatted_address", "place_id", "geometry"],
